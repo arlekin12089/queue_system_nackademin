@@ -1,0 +1,204 @@
+/*Reset styles*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	line-height: 1;
+	position: relative;
+	background: url(../styles/img/bg.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+body::before {
+	content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*Tracking block*/
+.tracking__heading {
+	text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.tracking__wrap {
+	background: #fff;
+	padding: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 rgb(0 0 0 / 5%);
+	width: 50%;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__field {
+	font-size: 1.125rem;
+	line-height: 23px;
+	font-weight: 400;
+	background: #ffffff;
+	width: 100%;
+	padding: 12px 20px;
+	border: 1px solid rgba(160, 160, 180, 0.5);
+	border-radius: 3px;
+	resize: none;
+}
+
+.tracking__buttons {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.tracking__buttons button {
+	margin-right: 5px;
+}
+
+#passengerList {
+	margin-top: 30px;
+  list-style-type: decimal;
+	padding-left: 15px;
+}
+
+.passenger{
+	margin-bottom: 10px;
+}
+
+.passenger button{
+	background-color: #FF464F;
+	margin-left: 10px;
+	font-size: 12px;
+	height: 30px;
+	line-height: 26px;
+	padding: 0 10px;
+	appearance: none;
+	user-select: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+.passenger button:hover{
+	background-color:#c4353c;
+}
+
+/* Buttons */
+.btn {
+	font-size: 14px;
+	line-height: 14px;
+	height: 40px;
+	white-space: nowrap;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 25px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.btn--green {
+	background-color: #00D377;
+}
+
+.btn--red {
+	background-color:#FF464F;
+}
+
+.btn--purple {
+	background-color: #875BB5;
+}
+
+.btn--green:hover {
+	background-color: #059053;
+}
+
+.btn--red:hover {
+	background-color: #c4353c;
+}
+
+.brn--purple:hover {
+	background-color: #644486;
+}
+
+/* End of Buttons */
+
+/*Error message*/
+.error__message {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	padding: 1rem 1.25rem;
+	font-size: 18px;
+	font-weight: bold;
+}
